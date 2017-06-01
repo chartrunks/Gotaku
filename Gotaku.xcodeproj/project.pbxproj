@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		043A097D1EDDEE8A00E5A30A /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A097C1EDDEE8A00E5A30A /* MainMenuViewController.swift */; };
+		043A097D1EDDEE8A00E5A30A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A097C1EDDEE8A00E5A30A /* MapViewController.swift */; };
+		045909AD1EDFC82000AE8EAE /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909AC1EDFC82000AE8EAE /* ForgotPasswordViewController.swift */; };
+		045909AF1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909AE1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift */; };
+		045909B11EDFF87C00AE8EAE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909B01EDFF87C00AE8EAE /* SignUpViewController.swift */; };
+		045909B31EDFF9D000AE8EAE /* DisplayNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909B21EDFF9D000AE8EAE /* DisplayNameViewController.swift */; };
+		045909B51EDFFA0F00AE8EAE /* DisplayPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909B41EDFFA0F00AE8EAE /* DisplayPicViewController.swift */; };
 		04ABA03B1EDD10ED00A76546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA03A1EDD10ED00A76546 /* AppDelegate.swift */; };
 		04ABA03D1EDD10ED00A76546 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA03C1EDD10ED00A76546 /* SignInViewController.swift */; };
 		04ABA0401EDD10ED00A76546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ABA03E1EDD10ED00A76546 /* Main.storyboard */; };
@@ -18,7 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		043A097C1EDDEE8A00E5A30A /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		043A097C1EDDEE8A00E5A30A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		045909AC1EDFC82000AE8EAE /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		045909AE1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
+		045909B01EDFF87C00AE8EAE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		045909B21EDFF9D000AE8EAE /* DisplayNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNameViewController.swift; sourceTree = "<group>"; };
+		045909B41EDFFA0F00AE8EAE /* DisplayPicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayPicViewController.swift; sourceTree = "<group>"; };
 		04ABA0371EDD10ED00A76546 /* Gotaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gotaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ABA03A1EDD10ED00A76546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ABA03C1EDD10ED00A76546 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -66,9 +76,14 @@
 			isa = PBXGroup;
 			children = (
 				04ABA03A1EDD10ED00A76546 /* AppDelegate.swift */,
+				045909B01EDFF87C00AE8EAE /* SignUpViewController.swift */,
 				04ABA03C1EDD10ED00A76546 /* SignInViewController.swift */,
 				04ABA03E1EDD10ED00A76546 /* Main.storyboard */,
-				043A097C1EDDEE8A00E5A30A /* MainMenuViewController.swift */,
+				045909B41EDFFA0F00AE8EAE /* DisplayPicViewController.swift */,
+				045909B21EDFF9D000AE8EAE /* DisplayNameViewController.swift */,
+				045909AE1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift */,
+				045909AC1EDFC82000AE8EAE /* ForgotPasswordViewController.swift */,
+				043A097C1EDDEE8A00E5A30A /* MapViewController.swift */,
 				04ABA0411EDD10ED00A76546 /* Assets.xcassets */,
 				04ABA0431EDD10ED00A76546 /* LaunchScreen.storyboard */,
 				04ABA0461EDD10ED00A76546 /* Info.plist */,
@@ -218,8 +233,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043A097D1EDDEE8A00E5A30A /* MainMenuViewController.swift in Sources */,
+				045909B11EDFF87C00AE8EAE /* SignUpViewController.swift in Sources */,
+				045909AD1EDFC82000AE8EAE /* ForgotPasswordViewController.swift in Sources */,
+				045909B51EDFFA0F00AE8EAE /* DisplayPicViewController.swift in Sources */,
+				043A097D1EDDEE8A00E5A30A /* MapViewController.swift in Sources */,
 				04ABA03D1EDD10ED00A76546 /* SignInViewController.swift in Sources */,
+				045909AF1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift in Sources */,
+				045909B31EDFF9D000AE8EAE /* DisplayNameViewController.swift in Sources */,
 				04ABA03B1EDD10ED00A76546 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
