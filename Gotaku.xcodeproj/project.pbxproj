@@ -13,6 +13,9 @@
 		045909B11EDFF87C00AE8EAE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909B01EDFF87C00AE8EAE /* SignUpViewController.swift */; };
 		045909B31EDFF9D000AE8EAE /* DisplayNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909B21EDFF9D000AE8EAE /* DisplayNameViewController.swift */; };
 		045909B51EDFFA0F00AE8EAE /* DisplayPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909B41EDFFA0F00AE8EAE /* DisplayPicViewController.swift */; };
+		047E2E2A1EE0ED4C009B3873 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2E291EE0ED4C009B3873 /* Shop.swift */; };
+		047E2E2C1EE0F1F2009B3873 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2E2B1EE0F1F2009B3873 /* Comment.swift */; };
+		047E2E2E1EE102B0009B3873 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2E2D1EE102B0009B3873 /* LocationSearchTable.swift */; };
 		04ABA03B1EDD10ED00A76546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA03A1EDD10ED00A76546 /* AppDelegate.swift */; };
 		04ABA03D1EDD10ED00A76546 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA03C1EDD10ED00A76546 /* SignInViewController.swift */; };
 		04ABA0401EDD10ED00A76546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ABA03E1EDD10ED00A76546 /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 		045909B01EDFF87C00AE8EAE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		045909B21EDFF9D000AE8EAE /* DisplayNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNameViewController.swift; sourceTree = "<group>"; };
 		045909B41EDFFA0F00AE8EAE /* DisplayPicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayPicViewController.swift; sourceTree = "<group>"; };
+		047E2E291EE0ED4C009B3873 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		047E2E2B1EE0F1F2009B3873 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		047E2E2D1EE102B0009B3873 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		04ABA0371EDD10ED00A76546 /* Gotaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gotaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ABA03A1EDD10ED00A76546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ABA03C1EDD10ED00A76546 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 				045909B01EDFF87C00AE8EAE /* SignUpViewController.swift */,
 				04ABA03C1EDD10ED00A76546 /* SignInViewController.swift */,
 				04ABA03E1EDD10ED00A76546 /* Main.storyboard */,
+				047E2E2D1EE102B0009B3873 /* LocationSearchTable.swift */,
+				047E2E291EE0ED4C009B3873 /* Shop.swift */,
+				047E2E2B1EE0F1F2009B3873 /* Comment.swift */,
 				045909B41EDFFA0F00AE8EAE /* DisplayPicViewController.swift */,
 				045909B21EDFF9D000AE8EAE /* DisplayNameViewController.swift */,
 				045909AE1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift */,
@@ -238,7 +247,10 @@
 				045909B51EDFFA0F00AE8EAE /* DisplayPicViewController.swift in Sources */,
 				043A097D1EDDEE8A00E5A30A /* MapViewController.swift in Sources */,
 				04ABA03D1EDD10ED00A76546 /* SignInViewController.swift in Sources */,
+				047E2E2E1EE102B0009B3873 /* LocationSearchTable.swift in Sources */,
+				047E2E2C1EE0F1F2009B3873 /* Comment.swift in Sources */,
 				045909AF1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift in Sources */,
+				047E2E2A1EE0ED4C009B3873 /* Shop.swift in Sources */,
 				045909B31EDFF9D000AE8EAE /* DisplayNameViewController.swift in Sources */,
 				04ABA03B1EDD10ED00A76546 /* AppDelegate.swift in Sources */,
 			);

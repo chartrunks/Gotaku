@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class DisplayNameViewController: UIViewController {
 
@@ -24,7 +26,10 @@ class DisplayNameViewController: UIViewController {
     }
     
     @IBAction func nextTapped(_ sender: Any) {
+        Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("displayName").setValue(nameTextField.text!)
         
+        performSegue(withIdentifier: "displayPicSegue", sender: nil)
     }
+    
     
 }

@@ -9,18 +9,48 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+protocol HandleMapSearch {
+    func dropPinZoomIn(placemark:MKPlacemark)
+}
+
+class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
     var manager = CLLocationManager()
     
+    var searchController : UISearchController!
+    
     var updateCount = 0
+    
+    var selectedPin:MKPlacemark? = nil
     
     //var tennisBoys: [TennisBoy] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Set up search controller
+        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
+        searchController = UISearchController(searchResultsController: locationSearchTable)
+        searchController.searchResultsUpdater = locationSearchTable
+        
+        //Configure search bar and embed it in navigation bar
+        let searchBar = searchController!.searchBar
+        searchBar.sizeToFit()
+        searchBar.placeholder = "Search for events/shops/cafes/etc..."
+        navigationItem.titleView = searchController.searchBar
+        
+        //Makes so search bar isn't ever hidden and makes background dim
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = true
+        definesPresentationContext = true
+        
+        //Pass mapView to locationSearchTable
+        locationSearchTable.mapView = mapView
+        
+        locationSearchTable.handleMapSearchDelegate = self
+        
         
         //tennisBoys = getAllTennisBoys()
         
@@ -36,6 +66,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
     }
     
+    func getDirections(){
+        if let selectedPin = selectedPin {
+            let mapItem = MKMapItem(placemark: selectedPin)
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
+            mapItem.openInMaps(launchOptions: launchOptions)
+        }
+    }
     
     //Runs once they give authorization
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -50,9 +87,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         //updates to show where they are
         manager.startUpdatingLocation()
-        
-        Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { (timer) in
-            //Spawn a tennis boy
             
             //Annotation is image on top of map
             if let coord = self.manager.location?.coordinate{
@@ -64,40 +98,40 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 //anno.coordinate.longitude += randomLon
                 //self.mapView.addAnnotation(anno)
             }
-        })
+        
     }
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
-        //Returns blue dot for location
-        if annotation is MKUserLocation{
-//            let annoView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
-//            
-//            annoView.image = UIImage(named: "tennisPlayer")
-//            
-//            var frame = annoView.frame
-//            frame.size.height = 50
-//            frame.size.width = 50
-//            annoView.frame = frame
-//            
-//            return annoView
-            return MKAnnotationView()
-        }
-        
-        //Change pin to pic
-        let annoView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
-        
-        //let tennisBoy = (annotation as! TennisBoyAnnotation).tennisBoy
-        
-        //annoView.image = UIImage(named: tennisBoy.imageName!)
-        
-        var frame = annoView.frame
-        frame.size.height = 50
-        frame.size.width = 50
-        annoView.frame = frame
-        
-        return annoView
-    }
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        
+//        //Returns blue dot for location
+//        if annotation is MKUserLocation{
+////            let annoView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+////            
+////            annoView.image = UIImage(named: "tennisPlayer")
+////            
+////            var frame = annoView.frame
+////            frame.size.height = 50
+////            frame.size.width = 50
+////            annoView.frame = frame
+////            
+////            return annoView
+//            return nil
+//        }
+//        
+//        //Change pin to pic
+//        let annoView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+//        
+//        //let tennisBoy = (annotation as! TennisBoyAnnotation).tennisBoy
+//        
+//        //annoView.image = UIImage(named: tennisBoy.imageName!)
+//        
+//        var frame = annoView.frame
+//        frame.size.height = 50
+//        frame.size.width = 50
+//        annoView.frame = frame
+//        
+//        return annoView
+//    }
     
     //Called everytime location manager sees movement
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -114,18 +148,30 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         //Do nothing if they click on the user image
         if view.annotation! is MKUserLocation {
-            return
+            //Move to the location of the item they clicked on
+            let region = MKCoordinateRegionMakeWithDistance(view.annotation!.coordinate, 200, 200)
+            mapView.setRegion(region, animated: true)
+            
+            
+            //Set a timer to make sure the zoom finishes first
+            Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
+                //Explore nearby / Create annotation at location
+            }
         }
         
-        //Move to the location of the tennis boy they clicked on
+        //Move to the location of the item they clicked on
         let region = MKCoordinateRegionMakeWithDistance(view.annotation!.coordinate, 200, 200)
         mapView.setRegion(region, animated: true)
         
         
         //Set a timer to make sure the zoom finishes first
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
-            
+            //Show info about that location
         }
+        
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
         
     }
     
@@ -136,4 +182,44 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
     }
 
+}
+
+extension MapViewController: HandleMapSearch {
+    func dropPinZoomIn(placemark:MKPlacemark){
+        // cache the pin
+        selectedPin = placemark
+        // clear existing pins
+        mapView.removeAnnotations(mapView.annotations)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = placemark.coordinate
+        annotation.title = placemark.name
+        if let city = placemark.locality,
+            let state = placemark.administrativeArea {
+            annotation.subtitle = "(city) (state)"
+        }
+        mapView.addAnnotation(annotation)
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let region = MKCoordinateRegionMake(placemark.coordinate, span)
+        mapView.setRegion(region, animated: true)
+    }
+}
+
+extension MapViewController {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView?{
+        if annotation is MKUserLocation {
+            //return nil so map view draws "blue dot" for standard user location
+            return nil
+        }
+        let reuseId = "pin"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
+        pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+        pinView?.pinTintColor = UIColor.orange
+        pinView?.canShowCallout = true
+        let smallSquare = CGSize(width: 30, height: 30)
+        let button = UIButton(frame: CGRect(origin: CGPoint.zero, size: smallSquare))
+        button.setBackgroundImage(UIImage(named: "car"), for: .normal)
+        button.addTarget(self, action: "getDirections", for: .touchUpInside)
+        pinView?.leftCalloutAccessoryView = button
+        return pinView
+    }
 }
