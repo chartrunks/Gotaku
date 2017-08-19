@@ -57,8 +57,8 @@ class SignUpViewController: UIViewController {
                         self.present(alertVC, animated: true, completion: nil)
                     }
                     else {
-                        Database.database().reference().child("users").child(user!.uid).child("email").setValue(user!.email!)
-                        Database.database().reference().child("users").child(user!.uid).child("rank").setValue(0)
+                        Database.database().reference().child("userInfo").child("users").child(user!.uid).child("email").setValue(user!.email!)
+                        Database.database().reference().child("userInfo").child("users").child(user!.uid).child("rank").setValue(0)
                         
                         let alertVC = UIAlertController(title: "Account created", message: "Your account has been created! A verification email was sent to your email address. Please verify your account and then log in.", preferredStyle: .alert)
                         let oKAction = UIAlertAction(title: "Ok", style: .default, handler: { (action) in

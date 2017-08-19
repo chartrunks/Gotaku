@@ -7,34 +7,94 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040AC2131EF0C9E100A29381 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC2121EF0C9E100A29381 /* CommentsTableViewController.swift */; };
+		042D6BED1F02F6D800F37DFA /* AddLocationHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D6BEC1F02F6D800F37DFA /* AddLocationHoursViewController.swift */; };
+		042E7C531EF616370027366C /* ViewAllActorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E7C521EF616370027366C /* ViewAllActorsViewController.swift */; };
+		042EA0E71EE8C77500679C7E /* ViewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EA0E61EE8C77500679C7E /* ViewLocationViewController.swift */; };
+		042EA0ED1EE905E000679C7E /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EA0EC1EE905E000679C7E /* CosmosDistrib.swift */; };
+		04350CE01F01EDA10036CCA2 /* AddShopGoodsTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04350CDF1F01EDA10036CCA2 /* AddShopGoodsTypesViewController.swift */; };
+		04350CE21F01EF030036CCA2 /* AddShopRelatedTitlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04350CE11F01EF030036CCA2 /* AddShopRelatedTitlesViewController.swift */; };
 		043A097D1EDDEE8A00E5A30A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A097C1EDDEE8A00E5A30A /* MapViewController.swift */; };
+		043D91661F099B24005386E2 /* ViewRoleInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D91651F099B24005386E2 /* ViewRoleInfoViewController.swift */; };
+		043E35501EF84FE1009762C8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E354F1EF84FE1009762C8 /* Event.swift */; };
+		043F2EFC1EF9CE63007E1177 /* ViewAllShopsFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F2EFB1EF9CE63007E1177 /* ViewAllShopsFoodViewController.swift */; };
+		043F2EFE1EF9CE81007E1177 /* ViewAllEventsShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F2EFD1EF9CE81007E1177 /* ViewAllEventsShowsViewController.swift */; };
+		0445D43A1F05BD25004DEE4B /* AddLocationTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445D4391F05BD25004DEE4B /* AddLocationTypeViewController.swift */; };
+		0445D43C1F05BD49004DEE4B /* AddLocationCoordinatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445D43B1F05BD49004DEE4B /* AddLocationCoordinatesViewController.swift */; };
+		0445D43E1F05BF19004DEE4B /* AddFoodMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445D43D1F05BF19004DEE4B /* AddFoodMenuViewController.swift */; };
+		0445D4431F05D3D2004DEE4B /* AddGoodsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445D4421F05D3D2004DEE4B /* AddGoodsInfoViewController.swift */; };
+		0449AE921EE51A03008B5A88 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449AE911EE51A03008B5A88 /* AddLocationViewController.swift */; };
+		045360CB1EF788A90093B5F6 /* AddActorPastRoleTimesDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045360CA1EF788A90093B5F6 /* AddActorPastRoleTimesDetailedViewController.swift */; };
+		0458475F1F0C80AE008940BA /* SearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458475E1F0C80AE008940BA /* SearchTable.swift */; };
 		045909AD1EDFC82000AE8EAE /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909AC1EDFC82000AE8EAE /* ForgotPasswordViewController.swift */; };
 		045909AF1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909AE1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift */; };
 		045909B11EDFF87C00AE8EAE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909B01EDFF87C00AE8EAE /* SignUpViewController.swift */; };
 		045909B31EDFF9D000AE8EAE /* DisplayNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909B21EDFF9D000AE8EAE /* DisplayNameViewController.swift */; };
 		045909B51EDFFA0F00AE8EAE /* DisplayPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045909B41EDFFA0F00AE8EAE /* DisplayPicViewController.swift */; };
-		047E2E2A1EE0ED4C009B3873 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2E291EE0ED4C009B3873 /* Shop.swift */; };
+		047E2E2A1EE0ED4C009B3873 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2E291EE0ED4C009B3873 /* Location.swift */; };
 		047E2E2C1EE0F1F2009B3873 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2E2B1EE0F1F2009B3873 /* Comment.swift */; };
 		047E2E2E1EE102B0009B3873 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2E2D1EE102B0009B3873 /* LocationSearchTable.swift */; };
+		047E8D8D1EFA281100C827C1 /* ViewAllShopsFoodPrefecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E8D8C1EFA281100C827C1 /* ViewAllShopsFoodPrefecturesViewController.swift */; };
+		047E8D8F1EFA289500C827C1 /* ViewAllShopsFoodInPrefectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E8D8E1EFA289500C827C1 /* ViewAllShopsFoodInPrefectureViewController.swift */; };
+		047E8D911EFA28EF00C827C1 /* ViewAllEventsShowsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E8D901EFA28EF00C827C1 /* ViewAllEventsShowsActivityViewController.swift */; };
+		0480A0911EE21219008760F4 /* LocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480A0901EE21219008760F4 /* LocationAnnotation.swift */; };
+		04A4844D1EF363A00072D0EA /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4844C1EF363A00072D0EA /* Actor.swift */; };
+		04A4844F1EF36D170072D0EA /* ViewActorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4844E1EF36D170072D0EA /* ViewActorViewController.swift */; };
 		04ABA03B1EDD10ED00A76546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA03A1EDD10ED00A76546 /* AppDelegate.swift */; };
 		04ABA03D1EDD10ED00A76546 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA03C1EDD10ED00A76546 /* SignInViewController.swift */; };
 		04ABA0401EDD10ED00A76546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ABA03E1EDD10ED00A76546 /* Main.storyboard */; };
 		04ABA0421EDD10ED00A76546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ABA0411EDD10ED00A76546 /* Assets.xcassets */; };
 		04ABA0451EDD10ED00A76546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ABA0431EDD10ED00A76546 /* LaunchScreen.storyboard */; };
 		04ABA04D1EDD114300A76546 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04ABA04C1EDD114300A76546 /* GoogleService-Info.plist */; };
+		04C848611F00A2E20085F6C9 /* EventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C848601F00A2E20085F6C9 /* EventAnnotation.swift */; };
+		04E676361EF4FA8000D2D7B4 /* AddActorNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E676351EF4FA8000D2D7B4 /* AddActorNameViewController.swift */; };
+		04E676381EF4FAA400D2D7B4 /* AddActorPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E676371EF4FAA400D2D7B4 /* AddActorPicViewController.swift */; };
+		04E6763A1EF4FACE00D2D7B4 /* AddActorBdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E676391EF4FACE00D2D7B4 /* AddActorBdayViewController.swift */; };
+		04E6763C1EF4FB0700D2D7B4 /* AddActorSocialMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6763B1EF4FB0700D2D7B4 /* AddActorSocialMediaViewController.swift */; };
+		04E6763E1EF4FB2300D2D7B4 /* AddActorHeightBloodTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6763D1EF4FB2300D2D7B4 /* AddActorHeightBloodTypeViewController.swift */; };
+		04E676401EF4FB5000D2D7B4 /* AddActorDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6763F1EF4FB5000D2D7B4 /* AddActorDescriptionViewController.swift */; };
+		04E676421EF4FB6700D2D7B4 /* AddActorRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E676411EF4FB6700D2D7B4 /* AddActorRoleViewController.swift */; };
+		04E676441EF4FB8D00D2D7B4 /* AddActorPastRoleTimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E676431EF4FB8D00D2D7B4 /* AddActorPastRoleTimesViewController.swift */; };
+		04EBD32C1EEC841000BE878A /* RBResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBD32B1EEC841000BE878A /* RBResizer.swift */; };
+		04ECF0221EEBAB40006FCFD8 /* WriteCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECF0211EEBAB40006FCFD8 /* WriteCommentViewController.swift */; };
+		04F814C31EF638F90005650E /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F814C21EF638F90005650E /* MainMenuViewController.swift */; };
 		D833E5989E8FD7F4BC7A2D7E /* Pods_Gotaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B1C0BDD88253B64D21782B /* Pods_Gotaku.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040AC2121EF0C9E100A29381 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
+		042D6BEC1F02F6D800F37DFA /* AddLocationHoursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationHoursViewController.swift; sourceTree = "<group>"; };
+		042E7C521EF616370027366C /* ViewAllActorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllActorsViewController.swift; sourceTree = "<group>"; };
+		042EA0E61EE8C77500679C7E /* ViewLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLocationViewController.swift; sourceTree = "<group>"; };
+		042EA0EC1EE905E000679C7E /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosDistrib.swift; path = ../../CosmosDistrib.swift; sourceTree = "<group>"; };
+		04350CDF1F01EDA10036CCA2 /* AddShopGoodsTypesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShopGoodsTypesViewController.swift; sourceTree = "<group>"; };
+		04350CE11F01EF030036CCA2 /* AddShopRelatedTitlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShopRelatedTitlesViewController.swift; sourceTree = "<group>"; };
 		043A097C1EDDEE8A00E5A30A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		043D91651F099B24005386E2 /* ViewRoleInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRoleInfoViewController.swift; sourceTree = "<group>"; };
+		043E354F1EF84FE1009762C8 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		043F2EFB1EF9CE63007E1177 /* ViewAllShopsFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllShopsFoodViewController.swift; sourceTree = "<group>"; };
+		043F2EFD1EF9CE81007E1177 /* ViewAllEventsShowsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllEventsShowsViewController.swift; sourceTree = "<group>"; };
+		0445D4391F05BD25004DEE4B /* AddLocationTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationTypeViewController.swift; sourceTree = "<group>"; };
+		0445D43B1F05BD49004DEE4B /* AddLocationCoordinatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationCoordinatesViewController.swift; sourceTree = "<group>"; };
+		0445D43D1F05BF19004DEE4B /* AddFoodMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodMenuViewController.swift; sourceTree = "<group>"; };
+		0445D4421F05D3D2004DEE4B /* AddGoodsInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGoodsInfoViewController.swift; sourceTree = "<group>"; };
+		0449AE911EE51A03008B5A88 /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		045360CA1EF788A90093B5F6 /* AddActorPastRoleTimesDetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActorPastRoleTimesDetailedViewController.swift; sourceTree = "<group>"; };
+		0458475E1F0C80AE008940BA /* SearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTable.swift; sourceTree = "<group>"; };
 		045909AC1EDFC82000AE8EAE /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		045909AE1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
 		045909B01EDFF87C00AE8EAE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		045909B21EDFF9D000AE8EAE /* DisplayNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNameViewController.swift; sourceTree = "<group>"; };
 		045909B41EDFFA0F00AE8EAE /* DisplayPicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayPicViewController.swift; sourceTree = "<group>"; };
-		047E2E291EE0ED4C009B3873 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		047E2E291EE0ED4C009B3873 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		047E2E2B1EE0F1F2009B3873 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		047E2E2D1EE102B0009B3873 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		047E8D8C1EFA281100C827C1 /* ViewAllShopsFoodPrefecturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllShopsFoodPrefecturesViewController.swift; sourceTree = "<group>"; };
+		047E8D8E1EFA289500C827C1 /* ViewAllShopsFoodInPrefectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllShopsFoodInPrefectureViewController.swift; sourceTree = "<group>"; };
+		047E8D901EFA28EF00C827C1 /* ViewAllEventsShowsActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllEventsShowsActivityViewController.swift; sourceTree = "<group>"; };
+		0480A0901EE21219008760F4 /* LocationAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationAnnotation.swift; sourceTree = "<group>"; };
+		04A4844C1EF363A00072D0EA /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		04A4844E1EF36D170072D0EA /* ViewActorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewActorViewController.swift; sourceTree = "<group>"; };
 		04ABA0371EDD10ED00A76546 /* Gotaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gotaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ABA03A1EDD10ED00A76546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ABA03C1EDD10ED00A76546 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +103,18 @@
 		04ABA0441EDD10ED00A76546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04ABA0461EDD10ED00A76546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04ABA04C1EDD114300A76546 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04C848601F00A2E20085F6C9 /* EventAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAnnotation.swift; sourceTree = "<group>"; };
+		04E676351EF4FA8000D2D7B4 /* AddActorNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActorNameViewController.swift; sourceTree = "<group>"; };
+		04E676371EF4FAA400D2D7B4 /* AddActorPicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActorPicViewController.swift; sourceTree = "<group>"; };
+		04E676391EF4FACE00D2D7B4 /* AddActorBdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActorBdayViewController.swift; sourceTree = "<group>"; };
+		04E6763B1EF4FB0700D2D7B4 /* AddActorSocialMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActorSocialMediaViewController.swift; sourceTree = "<group>"; };
+		04E6763D1EF4FB2300D2D7B4 /* AddActorHeightBloodTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActorHeightBloodTypeViewController.swift; sourceTree = "<group>"; };
+		04E6763F1EF4FB5000D2D7B4 /* AddActorDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActorDescriptionViewController.swift; sourceTree = "<group>"; };
+		04E676411EF4FB6700D2D7B4 /* AddActorRoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActorRoleViewController.swift; sourceTree = "<group>"; };
+		04E676431EF4FB8D00D2D7B4 /* AddActorPastRoleTimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActorPastRoleTimesViewController.swift; sourceTree = "<group>"; };
+		04EBD32B1EEC841000BE878A /* RBResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBResizer.swift; path = ../../RBResizer.swift; sourceTree = "<group>"; };
+		04ECF0211EEBAB40006FCFD8 /* WriteCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteCommentViewController.swift; sourceTree = "<group>"; };
+		04F814C21EF638F90005650E /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		56ACEFC30004CA38D00D30E1 /* Pods-Gotaku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotaku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gotaku/Pods-Gotaku.debug.xcconfig"; sourceTree = "<group>"; };
 		632CDBC9AC9C0CFDF6DCB66F /* Pods-Gotaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotaku.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gotaku/Pods-Gotaku.release.xcconfig"; sourceTree = "<group>"; };
 		B0B1C0BDD88253B64D21782B /* Pods_Gotaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gotaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +132,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0445D4401F05BF6D004DEE4B /* AddFoodViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0445D43D1F05BF19004DEE4B /* AddFoodMenuViewController.swift */,
+			);
+			name = AddFoodViewControllers;
+			sourceTree = "<group>";
+		};
+		0445D4411F05BF97004DEE4B /* AddShopViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04350CE11F01EF030036CCA2 /* AddShopRelatedTitlesViewController.swift */,
+				04350CDF1F01EDA10036CCA2 /* AddShopGoodsTypesViewController.swift */,
+			);
+			name = AddShopViewControllers;
+			sourceTree = "<group>";
+		};
 		04ABA02E1EDD10ED00A76546 = {
 			isa = PBXGroup;
 			children = (
@@ -81,15 +170,37 @@
 		04ABA0391EDD10ED00A76546 /* Gotaku */ = {
 			isa = PBXGroup;
 			children = (
+				0445D4411F05BF97004DEE4B /* AddShopViewControllers */,
+				0445D4401F05BF6D004DEE4B /* AddFoodViewControllers */,
+				04E676341EF4EDBF00D2D7B4 /* SignUpViewControllers */,
+				04E676331EF4EDA800D2D7B4 /* AddLocationViewControllers */,
+				04E676321EF4ED9600D2D7B4 /* AddActorViewControllers */,
+				04EBD32B1EEC841000BE878A /* RBResizer.swift */,
+				042EA0EC1EE905E000679C7E /* CosmosDistrib.swift */,
 				04ABA03A1EDD10ED00A76546 /* AppDelegate.swift */,
-				045909B01EDFF87C00AE8EAE /* SignUpViewController.swift */,
 				04ABA03C1EDD10ED00A76546 /* SignInViewController.swift */,
 				04ABA03E1EDD10ED00A76546 /* Main.storyboard */,
+				0458475E1F0C80AE008940BA /* SearchTable.swift */,
+				043D91651F099B24005386E2 /* ViewRoleInfoViewController.swift */,
+				0445D4421F05D3D2004DEE4B /* AddGoodsInfoViewController.swift */,
+				047E8D8C1EFA281100C827C1 /* ViewAllShopsFoodPrefecturesViewController.swift */,
+				047E8D8E1EFA289500C827C1 /* ViewAllShopsFoodInPrefectureViewController.swift */,
+				047E8D901EFA28EF00C827C1 /* ViewAllEventsShowsActivityViewController.swift */,
+				04F814C21EF638F90005650E /* MainMenuViewController.swift */,
+				042E7C521EF616370027366C /* ViewAllActorsViewController.swift */,
+				043F2EFB1EF9CE63007E1177 /* ViewAllShopsFoodViewController.swift */,
+				043F2EFD1EF9CE81007E1177 /* ViewAllEventsShowsViewController.swift */,
+				04A4844E1EF36D170072D0EA /* ViewActorViewController.swift */,
+				043E354F1EF84FE1009762C8 /* Event.swift */,
+				040AC2121EF0C9E100A29381 /* CommentsTableViewController.swift */,
+				04ECF0211EEBAB40006FCFD8 /* WriteCommentViewController.swift */,
+				042EA0E61EE8C77500679C7E /* ViewLocationViewController.swift */,
+				04A4844C1EF363A00072D0EA /* Actor.swift */,
 				047E2E2D1EE102B0009B3873 /* LocationSearchTable.swift */,
-				047E2E291EE0ED4C009B3873 /* Shop.swift */,
+				047E2E291EE0ED4C009B3873 /* Location.swift */,
+				0480A0901EE21219008760F4 /* LocationAnnotation.swift */,
+				04C848601F00A2E20085F6C9 /* EventAnnotation.swift */,
 				047E2E2B1EE0F1F2009B3873 /* Comment.swift */,
-				045909B41EDFFA0F00AE8EAE /* DisplayPicViewController.swift */,
-				045909B21EDFF9D000AE8EAE /* DisplayNameViewController.swift */,
 				045909AE1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift */,
 				045909AC1EDFC82000AE8EAE /* ForgotPasswordViewController.swift */,
 				043A097C1EDDEE8A00E5A30A /* MapViewController.swift */,
@@ -99,6 +210,43 @@
 				04ABA04C1EDD114300A76546 /* GoogleService-Info.plist */,
 			);
 			path = Gotaku;
+			sourceTree = "<group>";
+		};
+		04E676321EF4ED9600D2D7B4 /* AddActorViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04E676391EF4FACE00D2D7B4 /* AddActorBdayViewController.swift */,
+				04E676351EF4FA8000D2D7B4 /* AddActorNameViewController.swift */,
+				04E676371EF4FAA400D2D7B4 /* AddActorPicViewController.swift */,
+				04E6763F1EF4FB5000D2D7B4 /* AddActorDescriptionViewController.swift */,
+				04E676411EF4FB6700D2D7B4 /* AddActorRoleViewController.swift */,
+				04E676431EF4FB8D00D2D7B4 /* AddActorPastRoleTimesViewController.swift */,
+				045360CA1EF788A90093B5F6 /* AddActorPastRoleTimesDetailedViewController.swift */,
+				04E6763B1EF4FB0700D2D7B4 /* AddActorSocialMediaViewController.swift */,
+				04E6763D1EF4FB2300D2D7B4 /* AddActorHeightBloodTypeViewController.swift */,
+			);
+			name = AddActorViewControllers;
+			sourceTree = "<group>";
+		};
+		04E676331EF4EDA800D2D7B4 /* AddLocationViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0449AE911EE51A03008B5A88 /* AddLocationViewController.swift */,
+				0445D4391F05BD25004DEE4B /* AddLocationTypeViewController.swift */,
+				0445D43B1F05BD49004DEE4B /* AddLocationCoordinatesViewController.swift */,
+				042D6BEC1F02F6D800F37DFA /* AddLocationHoursViewController.swift */,
+			);
+			name = AddLocationViewControllers;
+			sourceTree = "<group>";
+		};
+		04E676341EF4EDBF00D2D7B4 /* SignUpViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				045909B01EDFF87C00AE8EAE /* SignUpViewController.swift */,
+				045909B41EDFFA0F00AE8EAE /* DisplayPicViewController.swift */,
+				045909B21EDFF9D000AE8EAE /* DisplayNameViewController.swift */,
+			);
+			name = SignUpViewControllers;
 			sourceTree = "<group>";
 		};
 		55E950699F8A446669A7A726 /* Frameworks */ = {
@@ -242,17 +390,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ECF0221EEBAB40006FCFD8 /* WriteCommentViewController.swift in Sources */,
+				04E6763E1EF4FB2300D2D7B4 /* AddActorHeightBloodTypeViewController.swift in Sources */,
 				045909B11EDFF87C00AE8EAE /* SignUpViewController.swift in Sources */,
 				045909AD1EDFC82000AE8EAE /* ForgotPasswordViewController.swift in Sources */,
+				043F2EFE1EF9CE81007E1177 /* ViewAllEventsShowsViewController.swift in Sources */,
+				040AC2131EF0C9E100A29381 /* CommentsTableViewController.swift in Sources */,
+				0458475F1F0C80AE008940BA /* SearchTable.swift in Sources */,
+				0445D4431F05D3D2004DEE4B /* AddGoodsInfoViewController.swift in Sources */,
+				04E676441EF4FB8D00D2D7B4 /* AddActorPastRoleTimesViewController.swift in Sources */,
+				045360CB1EF788A90093B5F6 /* AddActorPastRoleTimesDetailedViewController.swift in Sources */,
+				04F814C31EF638F90005650E /* MainMenuViewController.swift in Sources */,
+				043E35501EF84FE1009762C8 /* Event.swift in Sources */,
 				045909B51EDFFA0F00AE8EAE /* DisplayPicViewController.swift in Sources */,
+				047E8D8F1EFA289500C827C1 /* ViewAllShopsFoodInPrefectureViewController.swift in Sources */,
 				043A097D1EDDEE8A00E5A30A /* MapViewController.swift in Sources */,
+				04E6763C1EF4FB0700D2D7B4 /* AddActorSocialMediaViewController.swift in Sources */,
+				04A4844D1EF363A00072D0EA /* Actor.swift in Sources */,
+				0445D43A1F05BD25004DEE4B /* AddLocationTypeViewController.swift in Sources */,
+				042EA0E71EE8C77500679C7E /* ViewLocationViewController.swift in Sources */,
 				04ABA03D1EDD10ED00A76546 /* SignInViewController.swift in Sources */,
+				0449AE921EE51A03008B5A88 /* AddLocationViewController.swift in Sources */,
 				047E2E2E1EE102B0009B3873 /* LocationSearchTable.swift in Sources */,
+				04C848611F00A2E20085F6C9 /* EventAnnotation.swift in Sources */,
+				04E676421EF4FB6700D2D7B4 /* AddActorRoleViewController.swift in Sources */,
+				047E8D911EFA28EF00C827C1 /* ViewAllEventsShowsActivityViewController.swift in Sources */,
+				043D91661F099B24005386E2 /* ViewRoleInfoViewController.swift in Sources */,
+				04E676361EF4FA8000D2D7B4 /* AddActorNameViewController.swift in Sources */,
+				042D6BED1F02F6D800F37DFA /* AddLocationHoursViewController.swift in Sources */,
+				042EA0ED1EE905E000679C7E /* CosmosDistrib.swift in Sources */,
 				047E2E2C1EE0F1F2009B3873 /* Comment.swift in Sources */,
+				043F2EFC1EF9CE63007E1177 /* ViewAllShopsFoodViewController.swift in Sources */,
 				045909AF1EDFEAEE00AE8EAE /* LogInSignUpViewController.swift in Sources */,
-				047E2E2A1EE0ED4C009B3873 /* Shop.swift in Sources */,
+				04350CE21F01EF030036CCA2 /* AddShopRelatedTitlesViewController.swift in Sources */,
+				042E7C531EF616370027366C /* ViewAllActorsViewController.swift in Sources */,
+				04E676381EF4FAA400D2D7B4 /* AddActorPicViewController.swift in Sources */,
+				047E2E2A1EE0ED4C009B3873 /* Location.swift in Sources */,
+				04E676401EF4FB5000D2D7B4 /* AddActorDescriptionViewController.swift in Sources */,
 				045909B31EDFF9D000AE8EAE /* DisplayNameViewController.swift in Sources */,
+				0445D43E1F05BF19004DEE4B /* AddFoodMenuViewController.swift in Sources */,
+				04EBD32C1EEC841000BE878A /* RBResizer.swift in Sources */,
+				04350CE01F01EDA10036CCA2 /* AddShopGoodsTypesViewController.swift in Sources */,
 				04ABA03B1EDD10ED00A76546 /* AppDelegate.swift in Sources */,
+				0445D43C1F05BD49004DEE4B /* AddLocationCoordinatesViewController.swift in Sources */,
+				047E8D8D1EFA281100C827C1 /* ViewAllShopsFoodPrefecturesViewController.swift in Sources */,
+				04E6763A1EF4FACE00D2D7B4 /* AddActorBdayViewController.swift in Sources */,
+				0480A0911EE21219008760F4 /* LocationAnnotation.swift in Sources */,
+				04A4844F1EF36D170072D0EA /* ViewActorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +562,13 @@
 			baseConfigurationReference = 56ACEFC30004CA38D00D30E1 /* Pods-Gotaku.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Gotaku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Chartrunks.Gotaku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -391,10 +578,13 @@
 			baseConfigurationReference = 632CDBC9AC9C0CFDF6DCB66F /* Pods-Gotaku.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Gotaku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Chartrunks.Gotaku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

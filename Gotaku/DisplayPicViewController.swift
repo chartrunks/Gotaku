@@ -35,7 +35,7 @@ class DisplayPicViewController: UIViewController, UIImagePickerControllerDelegat
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         
-        imageView.image = image
+        imageView.image = RBSquareImageTo(image: image, size: CGSize(width: 75.0, height: 75.0))
         
         imageView.backgroundColor = UIColor.clear
         
@@ -59,24 +59,24 @@ class DisplayPicViewController: UIViewController, UIImagePickerControllerDelegat
         let imagesFolder = Storage.storage().reference().child("displaypics")
         
         //Converts image to data we can use
-        let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
+        let imageData = UIImageJPEGRepresentation((imageView?.image!)!, 0.1)!
         
         
         //Uploads data
-        imagesFolder.child("\(uuid).jpg").putData(imageData, metadata: nil, completion: { (metadata, error) in
+        imagesFolder.child("\(Auth.auth().currentUser?.uid).jpg").putData(imageData, metadata: nil, completion: { (metadata, error) in
             print("We tried to upload!")
             if error != nil {
                 print("An error occured: \(error)")
             } else {
                 //Perform segue after finished if no errors and sends URL to prepare
-                Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("displayPicURL").setValue(metadata?.downloadURL()?.absoluteString)
+                Database.database().reference().child("userInfo").child("users").child((Auth.auth().currentUser?.uid)!).child("displayPicURL").setValue(metadata?.downloadURL()?.absoluteString)
                 
                 self.performSegue(withIdentifier: "newLogInSegue", sender: nil)
             }
         })
         
         } else {
-            Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("displayPicURL").setValue("No image :(")
+            Database.database().reference().child("userInfo").child("users").child((Auth.auth().currentUser?.uid)!).child("displayPicURL").setValue("No image :(")
             performSegue(withIdentifier: "newLogInSegue", sender: nil)
         }
     }

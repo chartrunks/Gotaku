@@ -8,8 +8,13 @@
 
 import Foundation
 
-class Comment {
+class Comment{
     var fromUser = ""
     var fromDisplayPicURL = ""
     var text = ""
+    var time = ""
+    var rating = 0.0
+    
 }
+
+
